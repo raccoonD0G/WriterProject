@@ -8,7 +8,7 @@
 
 void UWPWordSimilarityCalculator::RunServerFastTextSimilarity(const FString& Word1, const FString& Word2, TFunction<void(float)> Callback)
 {
-    FString Url = TEXT("http://127.0.0.1:5000/similarity");
+    FString Url = TEXT("http://127.0.0.1:5001/similarity");
 
     TSharedPtr<FJsonObject> JsonObject = MakeShareable(new FJsonObject);
     JsonObject->SetStringField("word1", Word1);
